@@ -3,10 +3,6 @@ import AudioControls from "./AudioControls";
 import Backdrop from "./Backdrop";
 import "./styles.css";
 
-/*
- * Read the blog post here:
- * https://letsbuildui.dev/articles/building-an-audio-player-with-react-hooks
- */
 const AudioPlayer = ({ tracks }) => {
   // State
   const [trackIndex, setTrackIndex] = useState(0);

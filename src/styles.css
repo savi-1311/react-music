@@ -9,8 +9,14 @@
 
 html {
   font-family: Arial, Helvetica, sans-serif;
-  height: 100%;
-  background: var(--active-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /*background: var(--active-color);*/
+  background-image: url("./assets/background.png");
+  background-size: cover;
   transition: background 0.4s ease;
 }
 
@@ -32,10 +38,12 @@ input[type="range"] {
 }
 
 .audio-player {
-  max-width: 350px;
+  width: 350px;
   padding: 24px;
   border-radius: 20px;
   box-shadow: 0 28px 28px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   margin: auto;
   color: var(--white);
 }
@@ -88,8 +96,6 @@ input[type="range"] {
 }
 
 .color-backdrop {
-  background: linear-gradient(45deg, var(--active-color) 20%, transparent 100%)
-    no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -98,7 +104,7 @@ input[type="range"] {
   z-index: -1;
 }
 
-.color-backdrop.playing {
+.audio-player.playing {
   animation: colorChange 20s alternate infinite;
 }
 

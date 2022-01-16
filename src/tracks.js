@@ -1,31 +1,31 @@
-import imgSrc from "./assets/artwork.jpg";
-import imgSrc2 from "./assets/artwork2.jpg";
-import imgSrc3 from "./assets/artwork3.jpg";
+import imgSrc from "./assets/artwork1.png";
+import imgSrc2 from "./assets/artwork2.png";
+import imgSrc3 from "./assets/artwork3.png";
 import cali from "./assets/cali-wataboi.mp3";
-import fifty from "./assets/50-tobylane.mp3";
-import iwonder from "./assets/iwonder-dreamheaven.mp3";
+import fifty from "./assets/tropical-summer-beach-11171.mp3";
+import iwonder from "./assets/calming-in-the-sea-14112.mp3";
 
 // All of these artists are at https://pixabay.com/music/search/mood/laid%20back/
 export default [
   {
+    title: "Calming in the Sea",
+    artist: "Alex MakeMusic",
+    audioSrc: iwonder,
+    image: imgSrc,
+    color: "#5f9fff"
+  },
+  {
     title: "Cali",
     artist: "Wataboi",
     audioSrc: cali,
-    image: imgSrc,
+    image: imgSrc2,
     color: "#00aeb0"
   },
   {
-    title: "50",
-    artist: "tobylane",
+    title: "Tropical Summer Beach",
+    artist: "Alex MakeMusic",
     audioSrc: fifty,
-    image: imgSrc2,
-    color: "#ffb77a"
-  },
-  {
-    title: "I Wonder",
-    artist: "DreamHeaven",
-    audioSrc: iwonder,
     image: imgSrc3,
-    color: "#5f9fff"
+    color: "#ffb77a"
   }
 ];
